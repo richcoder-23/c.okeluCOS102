@@ -4,5 +4,7 @@ c = input("Input value of C: ")
 d = input("Input value of D: ")
 x = input("Input value of x: ")
 
-# cubic equation
-print("the cubic equation")
+# quadratic  equation
+discriminant = (b**2) - (4*a*c)
+
+print("the quadratic equation: {}")
