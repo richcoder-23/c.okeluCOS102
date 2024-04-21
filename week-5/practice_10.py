@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import messagebox as msgbox
 
 
 #handling button click event
@@ -17,11 +18,11 @@ root.title("Home page")
 root.geometry("300x100")
 
 #add a label widget
-label = tk.label(root, text="Hello Friend \n")
+label = tk.Label(root, text="Hello Friend \n")
 label.pack()
 
 # add a button widget 
-button = tk.Butoon(root, text="Click Me!", command=button_click)
+button = tk.Button(root, text="Click Me!", command=button_click)
 button.pack()
 
 # styling the button widget

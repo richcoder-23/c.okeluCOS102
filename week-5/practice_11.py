@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
-from PIL import Image, ImageTk
+'''from PIL import Image, ImageTk'''
 
 def welcomeMessage(username):
     #create a tkinter window
@@ -8,14 +8,14 @@ def welcomeMessage(username):
     window.title("Admin Box")
     window.geometry("500x200")
 
-    label_1 = tk.label(window, text=f"Welcome {username}\n")
-    label_1.pack(0)
+    label_1 = tk.Label(window, text=f"Welcome {username}\n")
+    label_1.pack()
     label_2 = tk.Label(window, text="This is Python GUI with Tkinter")
     label_2.pack()
 
 
     # run the Tkinter even loop
-    root.mainloop()
+    window.mainloop()
 
 def submit():
     username = username_entry.get()
@@ -27,19 +27,19 @@ def submit():
         messagebox.showerror("Login", "Invalid unsername or password")
 
 # create main window 
-root = tk.TK()
+root = tk.Tk()
 root.title("Login Form")
 root.geometry("500x200")
 
 
 #Create username label and entry
-username_label = tk.label(root, text ="Username:")
+username_label = tk.Label(root, text ="Username:")
 username_label.pack()
 username_entry = tk.Entry(root)
 username_entry.pack()
 
 #create password label and entry
-password_label = tk.label(root, text ="Password:")
+password_label = tk.Label(root, text ="Password:")
 password_label.pack()
 password_entry = tk.Entry(root, show="*")
 password_entry.pack()
